@@ -1,4 +1,4 @@
-step-comonent
+step-component
 =============
 
 Test 'step' web component
