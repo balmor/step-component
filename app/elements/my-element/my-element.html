@@ -1,0 +1,20 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="my-element" attributes="">
+  <template>
+    <link rel="stylesheet" href="my-element.css">
+
+    <p><label for="ageInput">Age:</label>
+      <input id="ageInput" type="range"
+           value="{{age}}">
+      <span> I am <b>{{age}}</b> years old.</span>
+    </p>
+    <span>Testing: </span>
+    <content select="q"></content>
+  </template>
+  <script>
+    Polymer({
+      age: 25
+    });
+</script>
+</polymer-element>

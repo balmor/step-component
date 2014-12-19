@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  padding: 10px;
+  background: gray;
+  color: LightSlateGray;
+  text-shadow: 0 1px 1px #fff;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ddd; }
+
+/*# sourceMappingURL=yo-sass.css.map */

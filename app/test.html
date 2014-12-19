@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Polymer test</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:vulcanized elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endbuild-->
+</head>
+
+<body unresolved>
+
+  <div class="container">
+    <yo-greeting></yo-greeting>
+
+    <h3>Custom element and shadow DOM</h3>
+
+    <my-element><q>Shadow DOM</q></my-element>
+
+    <h3>Buttons</h3>
+
+    <paper-button raised class="colored">
+      <core-icon icon="home"></core-icon>
+      button
+    </paper-button>
+    <paper-button raised class="custom">
+      <core-icon icon="polymer"></core-icon>
+      custom button
+    </paper-button>
+
+    <h3>Inky Tabs</h3>
+
+    <paper-tabs selected="0" class="pink">
+      <paper-tab>TAB 1</paper-tab>
+      <paper-tab>TAB 2</paper-tab>
+      <paper-tab>TAB 3</paper-tab>
+    </paper-tabs>
+
+    <h3>Dropdwon Menu</h3>
+
+    <paper-dropdown-menu label="Your favorite pastry">
+        <paper-dropdown class="dropdown">
+            <core-menu class="menu">
+                <paper-item>Croissant</paper-item>
+                <paper-item>Donut</paper-item>
+                <paper-item>Financier</paper-item>
+                <paper-item>Madeleine</paper-item>
+            </core-menu>
+        </paper-dropdown>
+    </paper-dropdown-menu>
+
+    <h3>Shadow</h3>
+
+    <paper-shadow class="card" z="0">
+      z = 0
+    </paper-shadow>
+
+    <paper-shadow class="card" z="1">
+      z = 1
+    </paper-shadow>
+
+    <paper-shadow class="card" z="2">
+      z = 2
+    </paper-shadow>
+
+    <paper-shadow class="card" z="3">
+      z = 3
+    </paper-shadow>
+
+    <paper-shadow class="card" z="4">
+      z = 4
+    </paper-shadow>
+
+    <paper-shadow class="card" z="5">
+      z = 5
+    </paper-shadow>
+
+  </div>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>

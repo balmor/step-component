@@ -1,0 +1,66 @@
+/* Polymer demo styles */
+
+// paper button
+paper-button.colored {
+  color: #4285f4;
+}
+
+paper-button[raised].colored {
+  background: #4285f4;
+  color: #fff;
+}
+
+paper-button core-icon {
+  margin-right: 4px;
+}
+
+paper-button.custom core-icon {
+  color: #4285f4;
+}
+
+paper-button.hover:hover {
+  background: #eee;
+}
+
+paper-button.blue-ripple::shadow #ripple {
+  color: #4285f4;
+}
+
+// paper tabs
+paper-tabs, core-toolbar {
+  background-color: #00bcd4;
+  color: #fff;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+core-toolbar paper-tabs {
+  box-shadow: none;
+}
+
+.pink paper-tab::shadow #ink {
+  color: #ff4081;
+}
+
+// paper-shadow
+.card {
+  display: inline-block;
+  background: orange;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+$color: orange;
+
+@for $item from 0 through 5 {
+  .card[z="#{$item}"] {
+    background: ($color + $item);
+  }
+}
+
+.card:hover {
+  background: lighten(orange, 10%);
+}

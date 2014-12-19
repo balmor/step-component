@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "file": "",
+  "sources": ["app/elements/yo-sass/yo-sass.sass"],
+  "names": [],
+  "mappings": "AAAA;EAEE,SAAS;EACT,SAAS;EACT,YAAY;EACZ,OAJQ;EAKR,aAAa;EACb,YAAY;EACZ,eAAe;EACf,QAAQ"
+}
